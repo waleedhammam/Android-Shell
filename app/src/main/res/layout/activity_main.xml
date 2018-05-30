@@ -14,20 +14,29 @@
         android:gravity="center"
         android:textAlignment="center"
         android:text="Shell Executer" />
+
     <EditText
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/txt"
+        android:id="@+id/input_text"
         android:hint="Example - ls" />
     <Button
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/btn"
+        android:id="@+id/execute_button"
         android:text="Execute" />
-    <TextView
+
+    <Button
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/out"
+        android:id="@+id/clear_button"
+        android:text="Clear" />
+
+    <TextView
+        android:id="@+id/output_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical"
         android:textAlignment="textStart" />
 
 </LinearLayout >

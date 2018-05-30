@@ -80,5 +80,6 @@ Shell.SU.run(String... commands) <br/>
 Many Thanks: Dr Mostafa Said 
 
 Thanks:</br>
+	https://github.com/jrummyapps/android-shell </br>
   https://stackoverflow.com/a/5686992/5380417 </br>
   https://www.learn2crack.com/2014/03/android-executing-shell-commands.html

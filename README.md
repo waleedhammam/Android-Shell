@@ -76,6 +76,9 @@ CommandResult result = Shell.SH.run(input.getText().toString()); <br/>
 Shell.SU.run(String... commands) <br/>
 
 ```
+
+## To download APK Check github releases
+## Don't forget to clean/rebuild project if you are modifying it on your machine
 ## Credits
 Many Thanks: Dr Mostafa Said 
 

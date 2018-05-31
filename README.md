@@ -55,24 +55,27 @@ and add it to build.gradle file (App level) in the project <br/>
 Shell.run(String shell, String... commands)
 Shell.SH.run(String... commands)
 Shell.SU.run(String... commands)
-``` <br/>
+```
+<br/>
 These return a CommandResult DataType, it has an exit code to check too <br/>
 Example: <br/>
-~~~
+```
 CommandResult result = Shell.SU.run("id");
 if (result.isSuccessful()) {
   System.out.println(result.getStdout());
   // Example output on a rooted device:
   // uid=0(root) gid=0(root) groups=0(root) context=u:r:init:s0
 }
-```<br/>
+```
+<br/>
 In our case we just want to execute an order so we do  <br/>
 Shell.SH.run(``` the command here as a string ```); <br/>
 It can be saved in a variable or checked on whatever you want <br/>
 CommandResult result = Shell.SH.run(input.getText().toString()); <br/>
 
 ## Rooted Devices <br/>
-	Rooted devices gives you more privileges to get its benefits instead use <br/>
+	Rooted devices gives you more privileges to get its benefits instead use 
+<br/>
 Shell.SU.run(String... commands) <br/>
 
 ```

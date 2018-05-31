@@ -56,17 +56,22 @@ Shell.run(String shell, String... commands)
 Shell.SH.run(String... commands)
 Shell.SU.run(String... commands)
 ```
+
 <br/>
-These return a CommandResult DataType, it has an exit code to check too <br/>
-Example: <br/>
-```
-CommandResult result = Shell.SU.run("id");
-if (result.isSuccessful()) {
-  System.out.println(result.getStdout());
-  // Example output on a rooted device:
-  // uid=0(root) gid=0(root) groups=0(root) context=u:r:init:s0
-}
-```
+These return a CommandResult DataType, it has an exit code to check too 
+<br/>
+Example: 
+<br/>
+
+~~~
+	CommandResult result = Shell.SU.run("id");
+	if (result.isSuccessful()) {
+	  System.out.println(result.getStdout());
+	  // Example output on a rooted device:
+	  // uid=0(root) gid=0(root) groups=0(root) context=u:r:init:s0
+	}
+~~~
+
 <br/>
 In our case we just want to execute an order so we do  <br/>
 Shell.SH.run(``` the command here as a string ```); <br/>
@@ -79,7 +84,7 @@ CommandResult result = Shell.SH.run(input.getText().toString()); <br/>
 Shell.SU.run(String... commands) <br/>
 
 ```
-
+```
 ## To download APK Check github releases
 ## Don't forget to clean/rebuild project if you are modifying it on your machine
 ## Credits
